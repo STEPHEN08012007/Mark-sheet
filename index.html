@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Grading System</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Grading System</h1>
+    <form id="gradeForm">
+      <input type="text" id="name" placeholder="Student Name" required />
+      <input type="number" id="subject1" placeholder="Subject 1 Marks" required />
+      <input type="number" id="subject2" placeholder="Subject 2 Marks" required />
+      <input type="number" id="subject3" placeholder="Subject 3 Marks" required />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <table id="resultsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Total</th>
+          <th>Average</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <!-- Student rows go here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
